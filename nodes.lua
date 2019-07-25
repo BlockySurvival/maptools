@@ -465,5 +465,6 @@ minetest.register_node("maptools:superapple", {
 	groups = {fleshy=3, dig_immediate=3, not_in_creative_inventory = maptools.creative},
 	on_use = minetest.item_eat(20),
 	sounds = default.node_sound_defaults(),
-	on_drop = maptools.drop_msg
+	on_drop = maptools.drop_msg,
+	on_place = maptools.place_msg,
 })
