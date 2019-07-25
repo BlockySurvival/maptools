@@ -16,6 +16,18 @@ local S, NS = dofile(modpath .. "/intllib.lua")
 maptools.S = S
 maptools.NS = NS
 
+maptools.drop_msg = function(itemstack, player)
+	local name = player:get_player_name()
+	minetest.chat_send_player(name, S("[maptools] tools/nodes do not drop!"))
+	return itemstack
+end
+
+maptools.place_msg = function(itemstack, placer, pointed_thing)
+        local name = placer:get_player_name()
+        minetest.chat_send_player(name, S("[maptools] you can't place this!"))
+	return itemstack
+end
+
 dofile(modpath .. "/config.lua")
 dofile(modpath .. "/aliases.lua")
 dofile(modpath .. "/craftitems.lua")
@@ -23,7 +35,3 @@ dofile(modpath .. "/default_nodes.lua")
 dofile(modpath .. "/nodes.lua")
 dofile(modpath .. "/tools.lua")
 
-maptools.drop_msg = function(itemstack, player)
-	local name = player:get_player_name()
-	minetest.chat_send_player(name, S("[maptools] tools/nodes do not drop!"))
-end
