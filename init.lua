@@ -34,4 +34,3 @@ dofile(modpath .. "/craftitems.lua")
 dofile(modpath .. "/default_nodes.lua")
 dofile(modpath .. "/nodes.lua")
 dofile(modpath .. "/tools.lua")
-
