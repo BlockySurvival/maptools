@@ -11,15 +11,17 @@ maptools.creative = maptools.config["hide_from_creative_inventory"]
 
 local pick_admin_toolcaps = {
 	full_punch_interval = 0.1,
-	max_drop_level = 3,
+	max_drop_level = 99,
 	groupcaps = {
-		unbreakable = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		fleshy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		choppy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		bendy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		cracky = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		crumbly = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		snappy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+		bendy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 5},
+		crumbly = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 5},
+		cracky = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 5},
+		choppy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 5},
+		fleshy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 5},
+		snappy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 5},
+		dig_immediate = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 5},
+		oddly_breakable_by_hand = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 5},
+		unbreakable = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 5},
 	},
 	damage_groups = {fleshy = 1000},
 }
