@@ -256,8 +256,8 @@ for pusher_num=1,10,1 do
 		groups = {
 			unbreakable = 1,
 			not_in_creative_inventory = maptools.creative,
-			-- fall_damage_add_percent = -100,
-			-- bouncy = pusher_num * 100,
+			fall_damage_add_percent = -100,
+			bouncy = pusher_num * 100,
 		},
 		on_drop = maptools.drop_msg
 	})
