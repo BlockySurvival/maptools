@@ -468,3 +468,19 @@ minetest.register_node("maptools:superapple", {
 	on_drop = maptools.drop_msg,
 	on_place = maptools.place_msg,
 })
+
+minetest.register_node("maptools:drowning", {
+	description = S("Drownable Air"),
+	range = 12,
+	stack_max = 10000,
+	inventory_image = "default_steel_block.png^dye_black.png",
+	drawtype = "airlike",
+	paramtype = "light",
+	pointable = false,
+	walkable = false,
+	drowning = 1,
+	sunlight_propagates = true,
+	drop = "",
+	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = maptools.drop_msg
+})
